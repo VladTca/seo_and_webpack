@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title><%= htmlWebpackPlugin.options.title %></title>
   <meta name="description" content="<%= htmlWebpackPlugin.options.metaDesc %>" />
-  <link rel="stylesheet" href="./css/main.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="<%= require('./css/main.css') %>" type="text/css" media="all" />
   <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
@@ -41,7 +41,7 @@
       <div class="text-center">
         <div class="product-img">
           <img
-                  src="./images/banana.jpg"
+                  src="<%= require('./images/banana.jpg') %>"
                   alt="A bunch of ripe yellow bananas on a white background."
           />
           <div class="product-name">
@@ -61,7 +61,7 @@
       <div class="text-center">
         <div class="product-img">
           <img
-                  src="./images/apples.jpg"
+                  src="<%= require('./images/apples.jpg') %>"
                   alt="A bunch of fresh apples on a white background."
           />
           <div class="product-name">
@@ -81,7 +81,7 @@
       <div class="text-center">
         <div class="product-img">
           <img
-                  src="./images/oranges.jpg"
+                  src="<%= require('./images/oranges.jpg') %>"
                   alt="Fresh oranges on a white background."
           />
           <div class="product-name">
